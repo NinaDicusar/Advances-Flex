@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex| NAVBAR</title>
+<style>
+body{
+    margin: 0;
+}
+a{
+    text-decoration:none;
+}body{
+    background-color: #234;
+    font-family: Arial;
+
+}
+.navbar{
+background-color: #111;
+}
+.navbar .brand{
+   font-size: 2em;
+   width: 400px;
+   padding: 10px 30px;
+}
+.navbar a:not(.brand){
+    width: 200px;
+    border: 1px solid red;
+    padding: 10px 20px;
+}
+.navbar a{
+    color: white;
+    background-color: #555;
+
+}
+/*--------FLEX--------*/
+
+
+.navbar a{
+    flex-grow:1;
+    flex-shrink: 2;
+}
+.navbar{
+    display:flex;
+    justify-content: space-evenly ;
+}
+.navbar .brand{
+    flex-grow:2 ;
+}
+.navbar a:nth-child(4){
+    flex-shrink: 1;
+}
+
+
+
+</style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a class="brand" href=""> BRAND</a>
+    <a href="">link 1</a>
+    <a href="">link 2</a>
+    <a href="">link 3</a>
+    <a href="">link 4</a>
+    <a href="">link 5</a>
+</nav>
+    
+</body>
+</html>
